@@ -11,11 +11,6 @@
 		86CBFA2028F5BF1600655E33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CBFA1F28F5BF1600655E33 /* ContentView.swift */; };
 		86CBFA2228F5BF1700655E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CBFA2128F5BF1700655E33 /* Assets.xcassets */; };
 		86CBFA2528F5BF1700655E33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CBFA2428F5BF1700655E33 /* Preview Assets.xcassets */; };
-		86CBFA2728F5BF1700655E33 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CBFA2628F5BF1700655E33 /* Persistence.swift */; };
-		86CBFA2A28F5BF1700655E33 /* DogAge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86CBFA2828F5BF1700655E33 /* DogAge.xcdatamodeld */; };
-		86CBFA3428F5BF1800655E33 /* DogAgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CBFA3328F5BF1800655E33 /* DogAgeTests.swift */; };
-		86CBFA3E28F5BF1800655E33 /* DogAgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CBFA3D28F5BF1800655E33 /* DogAgeUITests.swift */; };
-		86CBFA4028F5BF1800655E33 /* DogAgeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CBFA3F28F5BF1800655E33 /* DogAgeUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +36,8 @@
 		86CBFA1F28F5BF1600655E33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		86CBFA2128F5BF1700655E33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86CBFA2428F5BF1700655E33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		86CBFA2628F5BF1700655E33 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		86CBFA2928F5BF1700655E33 /* DogAge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DogAge.xcdatamodel; sourceTree = "<group>"; };
 		86CBFA2F28F5BF1800655E33 /* DogAgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogAgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		86CBFA3328F5BF1800655E33 /* DogAgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAgeTests.swift; sourceTree = "<group>"; };
 		86CBFA3928F5BF1800655E33 /* DogAgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogAgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		86CBFA3D28F5BF1800655E33 /* DogAgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAgeUITests.swift; sourceTree = "<group>"; };
-		86CBFA3F28F5BF1800655E33 /* DogAgeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAgeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				86CBFA1C28F5BF1600655E33 /* DogAge */,
-				86CBFA3228F5BF1800655E33 /* DogAgeTests */,
-				86CBFA3C28F5BF1800655E33 /* DogAgeUITests */,
 				86CBFA1B28F5BF1600655E33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,8 +89,6 @@
 				86CBFA1D28F5BF1600655E33 /* DogAgeApp.swift */,
 				86CBFA1F28F5BF1600655E33 /* ContentView.swift */,
 				86CBFA2128F5BF1700655E33 /* Assets.xcassets */,
-				86CBFA2628F5BF1700655E33 /* Persistence.swift */,
-				86CBFA2828F5BF1700655E33 /* DogAge.xcdatamodeld */,
 				86CBFA2328F5BF1700655E33 /* Preview Content */,
 			);
 			path = DogAge;
@@ -114,23 +100,6 @@
 				86CBFA2428F5BF1700655E33 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		86CBFA3228F5BF1800655E33 /* DogAgeTests */ = {
-			isa = PBXGroup;
-			children = (
-				86CBFA3328F5BF1800655E33 /* DogAgeTests.swift */,
-			);
-			path = DogAgeTests;
-			sourceTree = "<group>";
-		};
-		86CBFA3C28F5BF1800655E33 /* DogAgeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				86CBFA3D28F5BF1800655E33 /* DogAgeUITests.swift */,
-				86CBFA3F28F5BF1800655E33 /* DogAgeUITestsLaunchTests.swift */,
-			);
-			path = DogAgeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86CBFA2728F5BF1700655E33 /* Persistence.swift in Sources */,
 				86CBFA2028F5BF1600655E33 /* ContentView.swift in Sources */,
-				86CBFA2A28F5BF1700655E33 /* DogAge.xcdatamodeld in Sources */,
 				86CBFA1E28F5BF1600655E33 /* DogAgeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86CBFA3428F5BF1800655E33 /* DogAgeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +248,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86CBFA3E28F5BF1800655E33 /* DogAgeUITests.swift in Sources */,
-				86CBFA4028F5BF1800655E33 /* DogAgeUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,19 +549,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		86CBFA2828F5BF1700655E33 /* DogAge.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				86CBFA2928F5BF1700655E33 /* DogAge.xcdatamodel */,
-			);
-			currentVersion = 86CBFA2928F5BF1700655E33 /* DogAge.xcdatamodel */;
-			path = DogAge.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 86CBFA1228F5BF1600655E33 /* Project object */;
 }
