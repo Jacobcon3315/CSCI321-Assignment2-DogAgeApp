@@ -19,7 +19,7 @@ struct ContentView: View {
                 
                 Text("How Old Is Your Dog?")
                     .fontWeight(.light)
-                    .font(.body)
+                    .font(Font.custom("LazyDog", size: 30))
                     .padding()
                 
                 TextField("Enter your dog's age", text: $input)
@@ -40,7 +40,7 @@ struct ContentView: View {
                         .padding()
                         .foregroundColor(CustomColor.darkRaspberry)
                         .background(Color.white)
-                        .cornerRadius(100)
+                        .cornerRadius(50)
                 }
                 
                 Spacer()
