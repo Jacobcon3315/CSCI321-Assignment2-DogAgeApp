@@ -9,7 +9,9 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @State private var input: String = ""
+    
+    @StateObject private var viewModel = buttonView()
+    
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [CustomColor.lightRaspberry, CustomColor.darkRaspberry]), startPoint: .topLeading, endPoint: .bottomTrailing)
@@ -22,7 +24,7 @@ struct ContentView: View {
                     .font(Font.custom("LazyDog", size: 30))
                     .padding()
                 
-                TextField("Enter your dog's age", text: $input)
+                TextField("Enter your dog's age", text: $viewModel.dogAgeText)
                     .keyboardType(.numbersAndPunctuation)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal)
@@ -34,18 +36,29 @@ struct ContentView: View {
                     .cornerRadius(10)
                     .frame(width: 200, height: 250)
                 
-                Button {
-                } label: {
+                Button (action: {
+                    viewModel.compute()
+                }, label: {
                   Text("Human Age")
                         .padding()
                         .foregroundColor(CustomColor.darkRaspberry)
                         .background(Color.white)
                         .cornerRadius(50)
-                }
+                })
                 
                 Spacer()
                 
+                Text("\(viewModel.humanAgeText)")
+                    .foregroundColor(Color.white)
+                
             }
+            .alert(isPresented: $viewModel.showAlert) {
+                Alert(
+                    title: Text("Error"),
+                    message: Text(viewModel.errorMessage)
+                )
+            }
+
         }
     }
 }

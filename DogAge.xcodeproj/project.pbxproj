@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8629D7E128F88B73003F24E3 /* lazy_dog.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8629D7E028F88B73003F24E3 /* lazy_dog.ttf */; };
+		8629D7E528F89A87003F24E3 /* buttonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8629D7E428F89A87003F24E3 /* buttonView.swift */; };
 		86CBFA1E28F5BF1600655E33 /* DogAgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CBFA1D28F5BF1600655E33 /* DogAgeApp.swift */; };
 		86CBFA2028F5BF1600655E33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CBFA1F28F5BF1600655E33 /* ContentView.swift */; };
 		86CBFA2228F5BF1700655E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CBFA2128F5BF1700655E33 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		8629D7E028F88B73003F24E3 /* lazy_dog.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lazy_dog.ttf; sourceTree = "<group>"; };
 		8629D7E228F8900D003F24E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8629D7E428F89A87003F24E3 /* buttonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonView.swift; sourceTree = "<group>"; };
 		86CBFA1A28F5BF1600655E33 /* DogAge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogAge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CBFA1D28F5BF1600655E33 /* DogAgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAgeApp.swift; sourceTree = "<group>"; };
 		86CBFA1F28F5BF1600655E33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		8629D7E328F89A6D003F24E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8629D7E428F89A87003F24E3 /* buttonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		86CBFA1128F5BF1600655E33 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		86CBFA1C28F5BF1600655E33 /* DogAge */ = {
 			isa = PBXGroup;
 			children = (
+				8629D7E328F89A6D003F24E3 /* Views */,
 				8629D7E228F8900D003F24E3 /* Info.plist */,
 				86CBFA1D28F5BF1600655E33 /* DogAgeApp.swift */,
 				86CBFA1F28F5BF1600655E33 /* ContentView.swift */,
@@ -246,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8629D7E528F89A87003F24E3 /* buttonView.swift in Sources */,
 				86CBFA2028F5BF1600655E33 /* ContentView.swift in Sources */,
 				86CBFA1E28F5BF1600655E33 /* DogAgeApp.swift in Sources */,
 			);
